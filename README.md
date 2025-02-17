@@ -25,4 +25,4 @@ Before running this project, ensure you have the following installed:
 Clone the project from GitHub to your local machine:
 
 ```bash
-git clone https://github.com/your-username/job-scraper.git
+git clone https://github.com/sanchit770/job_Listing.git
