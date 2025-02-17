@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Salary for Python Developers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .salary {
+            font-size: 1.5em;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Python Developer Salary Statistics</h1>
+    </header>
+    <section id="average-salary">
+        <div class="content">
+            <h2>Average Salary</h2>
+            <p>The average salary for Python developers is:</p>
+            <p class="salary">₹{{ average_salary }}</p>
+        </div>
+    </section>
+    <script>
+        document.getElementById("avg-salary").textContent = "140,000";  
+    </script>
+
+</body>
+</html>

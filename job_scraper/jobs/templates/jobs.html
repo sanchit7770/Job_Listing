@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <a href="{% url 'average_salary' %}">View Average Salary</a>
+    <ul>
+        {% for job in jobs %}
+            <li>
+                <h2>{{ job.positionName }}</h2>
+                <p><strong>Company:</strong> {{ job.company }}</p>
+                <p><strong>Location:</strong> {{ job.location }}</p>
+                <p><strong>Salary:</strong> {{ job.salary }}</p>
+                <p><strong>Posted At:</strong> {{ job.postedAt }}</p>
+                <a href="{{ job.externalApplyLink }}" target="_blank">Apply Now</a>
+            </li>
+        {% empty %}
+            <p>No jobs available at the moment.</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
